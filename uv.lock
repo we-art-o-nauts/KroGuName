@@ -1,0 +1,74 @@
+version = 1
+revision = 2
+requires-python = ">=3.13"
+
+[[package]]
+name = "cython"
+version = "3.1.1"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/5b/d3/bb000603e46144db2e5055219bbddcf7ab3b10012fcb342695694fb88141/cython-3.1.1.tar.gz", hash = "sha256:505ccd413669d5132a53834d792c707974248088c4f60c497deb1b416e366397", size = 3175446, upload-time = "2025-05-19T09:44:54.347Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/2c/ec/7bc61e156f71cefdc1c7c2a9b8d25facdf6d208f9e19a80aa4ae56a9842e/cython-3.1.1-cp313-cp313-macosx_10_13_x86_64.whl", hash = "sha256:cb5661941707bd41ec7a9c273d698113ac50392444f785088e9d9706c6a5937b", size = 2990324, upload-time = "2025-05-19T09:57:39.962Z" },
+    { url = "https://files.pythonhosted.org/packages/1a/86/2f2550dcda3b54c65c9132ec95470cc4115b96a78163e539e0a02f767f05/cython-3.1.1-cp313-cp313-macosx_11_0_arm64.whl", hash = "sha256:28b174f41718a7041cfbe0f48913020875ff1aaa4793942b2451ac6d2baf3f07", size = 2822556, upload-time = "2025-05-19T09:57:41.989Z" },
+    { url = "https://files.pythonhosted.org/packages/9d/f8/b7a14323ee8474be00909469dd115e84d28719aaf94a55623fd6366dcab5/cython-3.1.1-cp313-cp313-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:c740a10cd0f50321d048c8ca318eefb4c42b8bffef982dcd89c946d374192702", size = 3060223, upload-time = "2025-05-19T09:57:46.439Z" },
+    { url = "https://files.pythonhosted.org/packages/ca/90/9fe8b93fa239b4871252274892c232415f53d5af0859c4a6ac9b1cbf9950/cython-3.1.1-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:7da069ca769903c5dee56c5f7ab47b2b7b91030eee48912630db5f4f3ec5954a", size = 3180196, upload-time = "2025-05-19T09:57:48.619Z" },
+    { url = "https://files.pythonhosted.org/packages/01/95/8fe6282a846f8ce56bb62434b48053910c68c94ec5da3bd47bc2de0bb5e2/cython-3.1.1-cp313-cp313-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:24c640c0746d984789fe2787a098f06cda456ef2dd78b90164d17884b350839a", size = 3208726, upload-time = "2025-05-19T09:57:51.258Z" },
+    { url = "https://files.pythonhosted.org/packages/be/28/7db9e79a5099659f6e46c48577f582e6b542873159c3f65033a247e364b5/cython-3.1.1-cp313-cp313-musllinux_1_2_aarch64.whl", hash = "sha256:426d78565eb91d3366569b20e92b8f14bffef5f57b2acd05b60bbb9ce5c056a1", size = 3112452, upload-time = "2025-05-19T09:57:53.365Z" },
+    { url = "https://files.pythonhosted.org/packages/44/68/de53aff8db5f05efd9fe7f1435aa6019573b94ae151ef82a66ca20b4ec57/cython-3.1.1-cp313-cp313-musllinux_1_2_i686.whl", hash = "sha256:b181158b5761bdaf40f6854f016ab7ddff64d3db4fca55cb3ca0f73813dd76d6", size = 3305698, upload-time = "2025-05-19T09:57:55.485Z" },
+    { url = "https://files.pythonhosted.org/packages/52/e9/a54f53ba5feeb00e187e24ba6fc7b085075e8ac53ed22797ac9d77db7422/cython-3.1.1-cp313-cp313-musllinux_1_2_x86_64.whl", hash = "sha256:7489559e6c5ecbba49d535c2e03cf77c2594a3190b6aca7da5b508ba1664a89a", size = 3258348, upload-time = "2025-05-19T09:57:57.605Z" },
+    { url = "https://files.pythonhosted.org/packages/0c/07/8c1a2ff59af7976ba16afe8cd54a070ce2986924cacecc7812236bf7f1c7/cython-3.1.1-cp313-cp313-win32.whl", hash = "sha256:263cb0e497910fb5e0a361ad1393b6d728b092178afecc56e8a786f3739960c3", size = 2457891, upload-time = "2025-05-19T09:57:59.675Z" },
+    { url = "https://files.pythonhosted.org/packages/79/5e/c469f7b42e145a06af79a3f7b599454c028a823c6a83adc867ddfd02f941/cython-3.1.1-cp313-cp313-win_amd64.whl", hash = "sha256:e000f0533eedf3d6dfbe30bb3c58a054c58f0a7778390342fa577a0dc47adab3", size = 2665693, upload-time = "2025-05-19T09:58:02.262Z" },
+    { url = "https://files.pythonhosted.org/packages/a7/97/8e8637e67afc09f1b51a617b15a0d1caf0b5159b0f79d47ab101e620e491/cython-3.1.1-py3-none-any.whl", hash = "sha256:07621e044f332d18139df2ccfcc930151fd323c2f61a58c82f304cffc9eb5280", size = 1220898, upload-time = "2025-05-19T09:44:50.614Z" },
+]
+
+[[package]]
+name = "krogufant"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "parquet" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "parquet", specifier = ">=1.3.1" }]
+
+[[package]]
+name = "parquet"
+version = "1.3.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "thriftpy2" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/39/06/56482f6834135a67dfc5a2bfce071a75be5c8c91edd8e319d69eb56b4644/parquet-1.3.1.tar.gz", hash = "sha256:fb1c90768c1b9159d4d6a9b3112ea8107b0b46d7491c5ac452ba7350f333bf0a", size = 23081, upload-time = "2020-04-30T01:06:40.195Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/14/a6/d57a2fe5caac3e0e0cdb78c0e450f30f953a590ecf94478065f33feb3d8f/parquet-1.3.1-py3-none-any.whl", hash = "sha256:a492a08643b51af8b4c2a25d97e1667170a483fc68ca408979b080ae9d771f51", size = 24579, upload-time = "2020-04-30T01:06:39.057Z" },
+]
+
+[[package]]
+name = "ply"
+version = "3.11"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/e5/69/882ee5c9d017149285cab114ebeab373308ef0f874fcdac9beb90e0ac4da/ply-3.11.tar.gz", hash = "sha256:00c7c1aaa88358b9c765b6d3000c6eec0ba42abca5351b095321aef446081da3", size = 159130, upload-time = "2018-02-15T19:01:31.097Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/a3/58/35da89ee790598a0700ea49b2a66594140f44dec458c07e8e3d4979137fc/ply-3.11-py2.py3-none-any.whl", hash = "sha256:096f9b8350b65ebd2fd1346b12452efe5b9607f7482813ffca50c22722a807ce", size = 49567, upload-time = "2018-02-15T19:01:27.172Z" },
+]
+
+[[package]]
+name = "six"
+version = "1.17.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/94/e7/b2c673351809dca68a0e064b6af791aa332cf192da575fd474ed7d6f16a2/six-1.17.0.tar.gz", hash = "sha256:ff70335d468e7eb6ec65b95b99d3a2836546063f63acc5171de367e834932a81", size = 34031, upload-time = "2024-12-04T17:35:28.174Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/b7/ce/149a00dd41f10bc29e5921b496af8b574d8413afcd5e30dfa0ed46c2cc5e/six-1.17.0-py2.py3-none-any.whl", hash = "sha256:4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274", size = 11050, upload-time = "2024-12-04T17:35:26.475Z" },
+]
+
+[[package]]
+name = "thriftpy2"
+version = "0.5.2"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "cython" },
+    { name = "ply" },
+    { name = "six" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/f8/3a/d983b26df17583a3cc865a9e1737bb8faacfa1e16e3ed17353ef48847e6b/thriftpy2-0.5.2.tar.gz", hash = "sha256:cefcb2f6f8b12c00054c6f942dd2323a53b48b8b6862312d03b677dcf0d4a6da", size = 782261, upload-time = "2024-07-05T11:59:42.92Z" }
