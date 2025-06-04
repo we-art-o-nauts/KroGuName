@@ -1,24 +1,17 @@
-import pandas as pd
+import parquet
 import re
 from collections import Counter
 
 def load_names_from_parquet(file_path):
-    """Load names from parquet file and return as list."""
-    df = pd.read_parquet(file_path)
-    
-    # Find the name column (assume it contains 'name' or 'prenom')
-    name_columns = [col for col in df.columns if 'name' in col.lower() or 'prenom' in col.lower()]
-    if name_columns:
-        name_column = name_columns[0]
-    else:
-        # Fallback to first string column
-        string_columns = df.select_dtypes(include=['object']).columns
-        if string_columns.size > 0:
-            name_column = string_columns[0]
-        else:
-            raise ValueError("Could not find a suitable column for names")
-    
-    return df[name_column].dropna().tolist()
+    """Load unique names from parquet file and return as list."""
+    just_names = []
+    with open(file_path, "rb") as fo:
+        for row in parquet.reader(fo):
+            p = row[0]
+            if p not in just_names:
+                just_names.append(p)
+    return just_names
+            
 
 def count_syllables(word):
     """Count syllables in a word."""

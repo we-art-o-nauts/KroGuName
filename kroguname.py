@@ -1,16 +1,16 @@
 from random import shuffle
 from syllalib import get_name_arrays
 
-file_path = "01_04_prenom.parquet"
+file_path = "01_04_prenom_only.parquet"
 
-krogufant = r"""
+kroguname = r"""
 
             _ ___                _______________
            _@)@) \            ,,/ '` ~ `'~~ ', `\.
-_/o\_ _ _ _/~`.`...'~\        ./~~..,T`,'',.,' '  \
-/ `,'.~,~.~  . K , . , ~|,   ,/ .,'N, ,. .. ,,.      \_
+_/o\_ _ _ _/~`.`...'~\        ./~~..,E`,'',.,' '  \
+/ `,'.~,~.~  . K , . , ~|,   ,/ .,'M, ,. .. ,,.      \_
 ( ' _' _ '_` _  ' R.    , `\_/ .'A..' '  `  `   `.    |_
-~V~ V~ V~ V~ ~\ `   'O .G' U  F ' .,.,''`.,.''`.,.`   '\_
+~V~ V~ V~ V~ ~\ `   'O .G' U  N ' .,.,''`.,.''`.,.`   '\_
 _/\ /\ /\ /\_/, . ' ,   `_/~\_ .' .,. ,|         |   / \\
 &lt; ~ ~ '~`'~'`, .,  .   `_: ::: \_ ' |    `_/  |__    **
 \ ' `_  '`_    _    ',/ _::_::_ \ _    | _::_::_ \
@@ -19,23 +19,24 @@ _/\ /\ /\ /\_/, . ' ,   `_/~\_ .' .,. ,|         |   / \\
 """
 
 if __name__ == "__main__":
-    print(krogufant)
+    print(kroguname)
+
+    # Load and check the data
     names, prefixes, suffixes = get_name_arrays(file_path)
-
     ratio = round(100*(len(prefixes)/len(suffixes)))
-
     print(f"Loaded {len(names)} names ({ratio}%)")
-
     if prefixes is None or suffixes is None:
         print("No prefixes or suffixes found")
         exit()
 
+    # Instruct the user
     print("Start typing letters and press ENTER to see more combinations")
     print("Type Q to quit")
     print("--- READY ---")
 
     old_input = None
     while True:
+        # Process user input
         user_input = input("> ")
         if old_input is not None and user_input is None:
             user_input = old_input
@@ -47,7 +48,7 @@ if __name__ == "__main__":
         shuffle(prefixes)
         shuffle(suffixes)
 
-        # Process user input
+        # Go forwards through the stack
         new_names = []
         for p in prefixes:
             if user_input.lower() in p.lower():
